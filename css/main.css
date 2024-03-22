@@ -84,6 +84,17 @@ textarea {
 }
 
 /* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+   .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+
+/* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
@@ -117,7 +128,7 @@ header .content-wrapper{
 .header-divider{
   width: 100%;
   height: 1px;
-  margin: 10px 0 20px;
+  margin: 10px 0 20px 0;
 
 
 }
@@ -153,14 +164,8 @@ footer h4 {
   padding:20px 0;
 }
 
-.footer-contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 footer .contact {
-  padding: 50px 0;
+  margin-bottom: 50px;
   
 }
 
@@ -210,37 +215,6 @@ aside {
   justify-content: center;
 }
 
-aside .content-wrapper {
-  
-}
-
-.form-description {
-  
-}
-aside h3{
-  margin:20px 0;
-}
-
-aside p{
-  margin:0 0 20px 0;
-}
-
-.form {
-  
-}
-aside input {
-  padding:1em;
-}
-
-aside input text {
-  padding-bottom:20px;;
-}
-
-aside input button {
-  padding-top: 20px;;
-}
-
-
 
 /* -------------------- Features ------------------------------------- */
 
@@ -249,13 +223,9 @@ aside input button {
   justify-content: center;
 }
 
-.features .content-wrapper {
-
-  
-}
 
 .features h2{
-  margin-bottom: 60;
+  margin-bottom: 60px;
 
 }
 
@@ -270,7 +240,7 @@ aside input button {
 
 .features article{
   margin: 30px 0;
-  width:60%;
+  width: 63%;
  
 }
 
@@ -280,10 +250,6 @@ aside input button {
 }
 .features  .fontawesome-icon {
   padding-bottom: 40px;
-
-}
-
-.features article p .features-item-description {
 
 }
 
@@ -329,6 +295,11 @@ aside input button {
     display: flex;
     justify-content: center;
   }
+
+  .contact-content p {
+    margin: 0;
+  }
+
   
   /* ==========================================================================
      FAQ Page
@@ -353,14 +324,6 @@ aside input button {
   .faq-content {
     margin-bottom: 50px;
   }
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -466,38 +429,30 @@ aside input button {
 /* -----Header Styles --------- */
 
 header  {
-  display: flex;
-  justify-content: center;
   padding: 33px 0;
 }
 
 header .content-wrapper{
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0;
+  width: 100%;
+  justify-content: space-between;
  
 }
 
 .header-divider{
   display: none;
 
-
 }
 
 header nav {
-  display: flex;
   width: 20%;
  
 }
 
 header nav ul {
-  display: flex;
   justify-content: space-between;
-  width: 100%;
+ 
  
 }
-
-.hero-area
 
 
 /* -----Footer Styles --------- */
@@ -511,12 +466,11 @@ footer .content-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-flow: row wrap;
   
 }
 
 footer .contact {
-  margin: 0;
+  margin-bottom: 0;
 }
 
 footer .copyright{
@@ -524,6 +478,8 @@ footer .copyright{
 
 
   }
+
+  /* -------------------- Hero Area ---------------------------------------- */
 
   /* -------------------- Aside ---------------------------------------- */
 
@@ -562,7 +518,7 @@ margin: 0;
 
 
 .features .features-item-description {
-  width: 50%;
+  width: 62%;
 
 }
 
@@ -574,7 +530,7 @@ margin: 0;
 }
 
 .reviews article div {
-  Width:49%;
+  Width: 49%;
 }
 
 /* ==========================================================================
@@ -584,11 +540,12 @@ margin: 0;
    .mission .content-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    padding-top:20px;
 }
 
 .mission-content p {
-    width: 40%
+    width: 45%
 }
 
 .contact-section .content-wrapper h2 {
@@ -598,7 +555,7 @@ margin: 0;
 .contact-content {
     display:flex;
     justify-content:space-between;
-    align-items:center;
+    align-items:flex-start;
 }
 
 /* ==========================================================================
